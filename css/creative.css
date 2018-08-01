@@ -82,27 +82,13 @@ header.masthead .row {
 }
 
 header.masthead img {
-  max-width: 100%;
+  max-width: 120%;
 }
 
 @media (min-width: 768px) {
   header.masthead img {
-    max-width: 90%;
-  }
-}
-
-@media (min-width: 992px) {
-  header.masthead img {
     max-width: 100%;
   }
-}
-
-header.masthead h1 {
-  font-size: 2rem;
-}
-
-header.masthead p {
-  font-weight: 300;
 }
 
 @media (min-width: 768px) {
@@ -141,11 +127,21 @@ body {
   color: white !important;
 }
 
+.my-5a {
+  margin-top: 2rem !important;
+}
+
 hr {
-  width: 25%;
+  width: 40%;
   border-width: 2px;
   border-color: white;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  hr {
+    width: 20%;
+  }
 }
 
 h1 {
@@ -160,9 +156,10 @@ h2 {
 h3, h4 {
   font-family: FlamaCondensed-light;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: .12rem;
   line-height: 1.4em;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 p {
@@ -184,46 +181,93 @@ a:hover {
 }
 
 .btn {
+  background-color: white;
   color: #364959;
   margin-top: 20px;
-  font-weight: 500;
-  font-size: 1.1em;
+  padding: .8rem .8rem;
+  font-weight: 600;
+  font-size: .8em;
   font-family: Flama-Basic;
   text-transform: uppercase;
-  letter-spacing: .1rem;
   border-radius: 300px;
   outline: 0;
 }
 
-.btn-xl {
-  padding: 1rem 1rem;
-  width: 80%;
-  background-color: white;
-  border-color: white;
+@media (max-width: 414px) {
+  .btn-xl {
+    width: 100%;
+  }
 }
 
-input[type="checkbox"] + label {
-  display: -ms-flexbox;
+@media (min-width: 768px) {
+  .btn-xl {
+    padding: .8rem .8rem;
+    width: 90%;
+    border: 0;
+  }
+}
+
+.wrappit {
+  max-width: 100%;
+  padding-left: 3em;
+}
+
+@media (min-width: 414px) {
+  .wrappit {
+    max-width: 95%;
+    padding-left: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrappit {
+    max-width: 100%;
+    padding-left: 4rem;
+  }
+}
+
+label {
+  font-size: .8em;
+  text-align: left;
+  font-family: Flama-Basic;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  text-indent: -14px;
-  margin-left: 24px;
-  width: 19px;
-  height: 19px;
-  border: none;
-  vertical-align: middle;
-  outline: none;
+  align-items: baseline;
+  /* Baseline centering */
+}
+
+@media (min-width: 768px) {
+  label {
+    font-size: 1em;
+  }
+}
+
+input[type=checkbox] {
+  flex: none;
+  margin-right: 5px;
+  outline: 0;
 }
 
 .privacy {
   font-family: Flama-Basic;
-  font-weight: 200;
-  font-size: .9em;
+  font-size: .7em;
 }
 
 .logo {
   width: 30%;
   margin-left: 50px;
   vertical-align: middle;
+}
+
+@media (max-width: 380px) {
+  .logo {
+    width: 40%;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .logo {
+    width: 20%;
+    margin-left: 10px;
+  }
 }
