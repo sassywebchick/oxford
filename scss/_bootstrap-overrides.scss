@@ -1,0 +1,99 @@
+// Bootstrap overrides for this template
+body {
+  background: linear-gradient( rgba(0, 30, 58, .55), rgba(0, 30, 58, .55) ), 
+  url('../img/background.jpg')  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.text-primary {
+  color: white !important;
+}
+
+hr {
+  width: 25%; 
+  border-width: 2px;
+  border-color: white;
+  padding: 0;
+}
+
+h1 {
+  line-height: 1em;  
+}
+
+h2 {
+  line-height: 2em;
+  font-size: 1.5rem;
+}
+
+h3, h4 {
+  font-family: FlamaCondensed-light;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  line-height: 1.4em;
+  font-size: 1.3rem;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+a {
+  color: white;
+  outline : none;
+}
+  a:hover {
+    -webkit-transform: scale(1.1);
+    cursor: pointer;
+    color: white;
+    background: $secondary;
+    opacity: 0.5;
+    outline : none;
+  }
+
+.btn {
+  color: $secondary;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.1em;
+  font-family: Flama-Basic;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  border-radius: 300px;
+  outline: 0;
+}
+
+.btn-xl {
+  padding: 1rem 1rem;
+  width: 80%;
+  background-color: white;
+  border-color: white;
+}
+
+input[type="checkbox"] +label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  text-indent: -14px; 
+  margin-left: 24px;
+  width:19px;
+  height:19px;
+  border:none;
+  vertical-align: middle;
+  outline: none;
+}
+
+.privacy {
+  font-family: Flama-Basic;
+  font-weight: 200;
+  font-size: .9em;
+}
+
+.logo {
+  width: 30%;
+  margin-left: 50px;
+  vertical-align: middle;
+}
