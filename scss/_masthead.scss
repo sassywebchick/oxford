@@ -21,18 +21,13 @@ header.masthead {
   }
 
   img {
-    max-width:120%;
+    max-width:100%;
   }
   @media (min-width: 768px) {
     img {
       max-width: 100%;
   }
 }
-  // @media (min-width: 992px) {
-  //   img {
-  //     max-width: 100%;
-  //   }
-  // }
 
   @media (min-width: 768px) {
     p {

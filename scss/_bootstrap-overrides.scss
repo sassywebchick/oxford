@@ -54,16 +54,14 @@ p {
 a {
   color: white;
   outline : none;
-}
 
-  a:hover {
-    -webkit-transform: scale(1.1);
+   &:hover {
     cursor: pointer;
-    color: white;
-    background: $secondary;
-    opacity: 0.5;
-    outline : none;
-  }
+    color: black;
+    text-decoration: none;
+    opacity: 0.6;
+   }
+}
 
 .btn {
   background-color: white;
@@ -78,14 +76,19 @@ a {
   outline: 0;
 }
 
-// Tablet Styles (max-width: 768px)
-// Mobile Styles (max-width: 414px)
+.btn-xl {
+  width: 100%;
+}
+.btn-xl:hover {
+  -webkit-transform: scale(1.1);
+  cursor: pointer;
+  color: white;
+  background: $secondary;
+  opacity: 0.5;
+  outline : none;
+  text-decoration: none;
+}
 
- @media (max-width: 414px) {
-    .btn-xl {
-      width: 100%;
-    }
-  }
 
 @media (min-width: 768px) {
   .btn-xl {
@@ -96,73 +99,57 @@ a {
 }
 
 .wrappit {
-  max-width: 100%;
+  max-width: 90%;
   padding-left: 3em;
+  margin-top: 1em;
 }
 
-  @media (min-width: 414px) {
-    .wrappit {
-      max-width: 95%;
-      padding-left: 4rem;
-    }
+@media (min-width: 414px) {
+  .wrappit {
+    max-width: 95%;
+    padding-left: 4rem;
+  }
 }
-    @media (min-width: 768px) {
-      .wrappit {
-        max-width:100%;
-        padding-left: 4rem;
-      }
-    }
+@media (min-width: 768px) {
+  .wrappit {
+    max-width:100%;
+  }
+}
 
+label {
+  font-size: .8em;
+  text-align: left;
+  font-family: Flama-Basic;
+  display: flex;
+  align-items: baseline;
+}
+
+@media (min-width: 768px) {
   label {
-    font-size: .8em;
-    text-align: left;
-    font-family: Flama-Basic;
-    display: flex;
-    align-items: baseline; /* Baseline centering */
-  }
+    font-size: 1em;
+  } 
+}
 
-  // @media (min-width: 414px) {
-  //   label {
-  //     font-size: .8em;
-  //   } 
-  // }
+input[type=checkbox] {
+  flex: none;
+  margin-right: 5px;
+  outline:0;
+}
 
-   @media (min-width: 768px) {
-    label {
-      font-size: 1em;
-    } 
-  }
+.lockup {
+  padding: 1em;
+}
 
-  input[type=checkbox] {
-    flex: none;
-    margin-right: 5px;
-    outline:0;
-  }
-
+@media (max-width: 768px) {
   .privacy {
     font-family: Flama-Basic;
-    font-size: .7em;
+    font-size: .6em;
+    text-decoration: none;
   }
+}
 
   .logo {
-    width: 30%;
-    margin-left: 50px;
-    vertical-align: middle;
+    max-width: 40% !important;
+    vertical-align: baseline;
   }
-  @media (max-width: 380px) {
-    .logo {
-      width:40%;
-      margin-left:10px;
-    }
-  }
-
-  @media (min-width: 768px) {
-    .logo {
-      width:20%;
-      margin-left:10px;
-    }
-  }
-
-
-
 

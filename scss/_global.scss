@@ -1,22 +1,42 @@
 // Global styling for this template
+
+@font-face {
+  font-family: 'Flama-Medium';
+  src: url('fonts/Flama-Medium.eot');
+  src: url('fonts/Flama-Medium.woff') format('woff'),
+       url('fonts/Flama-Medium.svg#Flama-Medium') format('svg'),
+       url('fonts/Flama-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FlamaCondensed-Black';
+  src: url('fonts/FlamaCondensed-Black.eot');
+  src: url('fonts/FlamaCondensed-Black.woff') format('woff'),
+       url('fonts/FlamaCondensed-Black.svg#FlamaCondensed-Black') format('svg'),
+       url('fonts/FlamaCondensed-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Flama-Book';
+  src: url('fonts/Flama-Book.eot');
+  src: url('fonts/Flama-Book.woff') format('woff'),
+       url('fonts/Flama-Book.svg#Flama-Book') format('svg'),
+       url('fonts/Flama-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body,
 html {
   width: 100%;
   height: 100%;
 }
 
-body {
-  @include serif-font;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
-}
 
 .bg-primary {
   background-color: $primary !important;

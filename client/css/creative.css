@@ -28,6 +28,19 @@ html {
   height: 100%;
 }
 
+body {
+  font-family: 'FlamaCondensed-Medium,', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
 .bg-primary {
   background-color: #fef035 !important;
 }
